@@ -1,0 +1,33 @@
+
+/* CSS POUR LE SHORTCODE .image-titre */
+.banniere-titre{
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.banniere-titre:before{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.5;
+}
+.banniere-titre .titre{
+   position: relative;
+    z-index: 2;
+    margin: 0;
+    padding: 10px 20px;
+    text-align: center;
+}

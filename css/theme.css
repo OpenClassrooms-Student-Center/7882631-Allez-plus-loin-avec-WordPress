@@ -45,3 +45,24 @@ li.menu-item.current-menu-item a {
     background-color: #313332;
     text-decoration: none !important;
 }
+
+
+/* FOOTER */
+.footer-nav-widgets-wrapper {
+    padding: 20px;
+    background-color: #C8D6CF !important;
+}
+
+.footer-nav-widgets-wrapper .widgettitle,
+.footer-nav-widgets-wrapper .menu {
+    text-align: center;
+}
+
+
+#site-footer {
+    padding: 20px;
+    text-align: center;
+    color: #6d6d6d;
+    background-color: #C8D6CF !important;
+}
+

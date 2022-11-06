@@ -108,3 +108,61 @@ li.menu-item.current-menu-item a {
     }
 }
 
+
+/* LEXIQUE */
+
+#lexique h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+#lexique > section {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#lexique .mot {
+    border: 1px solid grey;
+    border-radius: 20px;
+    margin: 0 20px 20px 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#lexique .mot .down {
+    display: inline-block;
+}
+
+#lexique .mot .up {
+    display: none;
+}
+
+#lexique .mot.open .down {
+    display: none;
+}
+
+#lexique .mot.open .up {
+    display: inline-block;
+}
+
+#lexique .mot .titre {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #c8d6cf;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#lexique .mot .definition {
+    padding: 10px 20px;
+    display: none;
+}
+
+#lexique .mot.open .definition {
+    padding: 10px 20px;
+    display: block;
+    background: #F4CA52;
+}

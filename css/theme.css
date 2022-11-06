@@ -66,3 +66,45 @@ li.menu-item.current-menu-item a {
     background-color: #C8D6CF !important;
 }
 
+
+/* A PROPOS */
+
+
+#apropos h1 {
+    text-align: center;
+    font-size: 40px;
+}
+#apropos > section {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+#apropos > section h2 {
+    width: 100%;
+    padding: 0 15px;
+    font-size: 30px;
+}
+#apropos > section .image {
+    width: 300px;
+    padding: 0 15px;
+}
+#apropos > section .image img {
+    width: 100%;
+}
+#apropos > section .text {
+    flex: 1;
+}
+@media( max-width: 768px){
+    #apropos > section > *{
+        width: 100%;
+        flex: initial!important;
+    }
+    #apropos > section .image{
+        order:2;
+    }
+}
+

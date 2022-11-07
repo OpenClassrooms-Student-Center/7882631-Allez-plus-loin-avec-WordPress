@@ -94,3 +94,34 @@ add_filter('get_the_archive_title', function ($title) {
     }
     return $title;
 });
+
+
+function the_category_filter($categories)
+{
+    return str_replace("Outils", "Tous les outils", $categories);
+}
+
+add_filter('the_category', 'the_category_filter');
+
+
+function the_content_filter($content)
+{
+    if (is_single() && in_category('outils')) {
+        return '<hr><h2>Description</h2>' . $content;
+    }
+    return $content;
+}
+
+add_filter('the_content', 'the_content_filter');
+
+
+
+function the_excerpt_filter($content)
+{
+    if (is_archive()) {
+        return $content."<div class='more-excerpt'><a href='".get_the_permalink()."'>En savoir plus sur l'outil</a></div>";
+    }
+    return $content;
+}
+
+add_filter('the_excerpt', 'the_excerpt_filter');

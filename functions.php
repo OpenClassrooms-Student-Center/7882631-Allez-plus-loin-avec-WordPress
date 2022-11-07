@@ -127,6 +127,16 @@ function the_excerpt_filter($content)
 add_filter('the_excerpt', 'the_excerpt_filter');
 
 
+function paginate_links_filter($r)
+{
+    return "Pages: ".$r;
+}
+
+add_filter('paginate_links_output', 'paginate_links_filter');
+
+
+
+
 /* HOOKS ACTIONS */
 
 
